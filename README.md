@@ -1,17 +1,21 @@
->**Note**: Please **fork** the current Udacity repository so that you will have a **remote** repository in **your** Github account. Clone the remote repository to your local machine. Later, as a part of the project "Post your Work on Github", you will push your proposed changes to the remote repository in your Github account.
-
 ### Date created
-Include the date you created this project and README file.
+2023/07/10
 
 ### Project Title
-Replace the Project Title
+Explore US Bike Share Data
 
 ### Description
-Describe what your project is about and what it does
+This project uses python to explore data related to bike share systems for three major cities in the United States—Chicago, New York City, and Washington. The user of the program gets an interactive experience in the terminal and can choose the city he wants to explore and some additional filter such as the month and the day of the week. Optionally some raw data of the filtered data is shown and afterwards some selected statistics of the data will be shown.
 
 ### Files used
-Include the files used
+# Python programm file
+bikehsare.py
+
+# Data file 
+chicago.csv
+new_york_city.csv
+washington.csv
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
+https://github.com/GoogleChrome/lighthouse
 
