@@ -122,7 +122,7 @@ def time_stats(df, month, day):
 
 
 def station_stats(df):
-    """Displays statistics on the most popular stations and trip.
+    """Displays statistics on the most popular stations and trip. Based on the filtered data
     Args: (DataFrame) df - Pandas DataFrame containing city data filtered by month and day
     """
     print('\nCalculating The Most Popular Stations and Trip...\n')
