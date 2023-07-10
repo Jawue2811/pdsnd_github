@@ -69,14 +69,14 @@ def load_data(city, month, day):
     df['month'] = df['Start Time'].dt.month
     df['day_of_week'] = df['Start Time'].dt.weekday_name
     
-    # filter by month if applicable
+    # filter by month if applicable, if not applicable go to next if-statement
     if month != 'all':
         # use the index of the Month_Filter list to get the corresponding int
         month = Month_Filter.index(month) + 1
         # filter by month to create the new dataframe
         df = df[df['month'] == month]
    
-    # filter by day of week if applicable
+    # filter by day of week if applicable, if not applicable the function will end
     if day != 'all':
         # filter by day of week to create the new dataframe
         df = df[df['day_of_week'] == day.title()]
@@ -122,7 +122,7 @@ def time_stats(df, month, day):
 
 
 def station_stats(df):
-    """Displays statistics on the most popular stations and trip.
+    """Displays statistics on the most popular stations and trip. Based on the filtered data
     Args: (DataFrame) df - Pandas DataFrame containing city data filtered by month and day
     """
     print('\nCalculating The Most Popular Stations and Trip...\n')
